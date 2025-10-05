@@ -1,11 +1,12 @@
 'use client';
 import ArrowAnimation from '@/components/ArrowAnimation';
 import Button from '@/components/Button';
-import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react';
+import Image from "next/image";
+
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -55,17 +56,21 @@ const Banner = () => {
   {/* Roles */}
   <div className="flex flex-col items-center justify-center mt-4 space-y-2">
     <div className="flex items-center justify-center">
-      <img 
+      <Image 
         src="/logo/leftone.png" 
         alt="Laurel left" 
+        width={32}  // Matches h-8/w-8 base
+  height={32}
         className="h-8 w-8 sm:h-10 sm:w-10 mr-2 animate-star-twinkle [filter:brightness(0)_saturate(100%)_invert(80%)_sepia(85%)_saturate(600%)_hue-rotate(45deg)_brightness(110%)_contrast(95%)]" 
       />
       <span className="mx-1 text-lg sm:text-2xl font-semibold text-white tracking-wide">
         ITE-SE TEACHING ASSISTANT
       </span>
-      <img 
+      <Image 
         src="/logo/rightone.png" 
         alt="Laurel right" 
+        width={32}  // Matches h-8/w-8 base
+  height={32}
         className="h-8 w-8 sm:h-10 sm:w-10 ml-2 animate-star-twinkle [filter:brightness(0)_saturate(100%)_invert(80%)_sepia(85%)_saturate(600%)_hue-rotate(45deg)_brightness(110%)_contrast(95%)]" 
       />
     </div>
