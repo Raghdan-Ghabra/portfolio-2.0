@@ -11,10 +11,10 @@ export const GENERAL_INFO = {
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Raghdan' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/Raghdan' },
-    { name: 'facebook', url: 'https://www.facebook.com/Raghdan.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: '' },
+    { name: 'linkedin', url: 'www.linkedin.com/in/raghdanghabra' },
+    { name: 'facebook', url: 'https://www.facebook.com/raghdan.ghabra.7' },
+    { name: 'Old Version', url: "" },
 ];
 
 export const MY_STACK = {
