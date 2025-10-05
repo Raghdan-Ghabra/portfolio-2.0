@@ -41,28 +41,73 @@ const Banner = () => {
                 ref={containerRef}
             >
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
-                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
-                        <span className="text-primary">RAGHDAN GHABRA</span>
-                        <br /> <span className="ml-4">DATA ENGINEER & UNIVERSITY LECTURER</span>
-                    </h1>
-                    <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
-                        Hi! I&apos;m{' '}
-                        <span className="font-medium text-foreground">
-                            Tajmirul
-                        </span>
-                        . A creative Frontend Developer with 3+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
-                    </p>
+  {/* Name with subtle glow animation */}
+ <h6 className="banner-title slide-up-and-fade leading-[.92] text-center mt-4 sm:mt-6">
+  {/* Name */}
+ <span
+  className="text-primary flex items-center justify-center space-x-4 text-6xl sm:text-[80px] font-anton"
+>
+  RAGHDAN GHABRA
+</span>
+
+
+
+  {/* Roles */}
+  <div className="flex flex-col items-center justify-center mt-4 space-y-2">
+    <div className="flex items-center justify-center">
+      <img 
+        src="/logo/leftone.png" 
+        alt="Laurel left" 
+        className="h-8 w-8 sm:h-10 sm:w-10 mr-2 animate-star-twinkle [filter:brightness(0)_saturate(100%)_invert(80%)_sepia(85%)_saturate(600%)_hue-rotate(45deg)_brightness(110%)_contrast(95%)]" 
+      />
+      <span className="mx-1 text-lg sm:text-2xl font-semibold text-white tracking-wide">
+        ITE-SE TEACHING ASSISTANT
+      </span>
+      <img 
+        src="/logo/rightone.png" 
+        alt="Laurel right" 
+        className="h-8 w-8 sm:h-10 sm:w-10 ml-2 animate-star-twinkle [filter:brightness(0)_saturate(100%)_invert(80%)_sepia(85%)_saturate(600%)_hue-rotate(45deg)_brightness(110%)_contrast(95%)]" 
+      />
+    </div>
+
+    <span className="mx-2 text-lg sm:text-xl text-gray-300 font-medium tracking-wider uppercase">
+      DAMASCUS UNIVERSITY
+    </span>
+  </div>
+
+  {/* Short tagline */}
+  <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-400 italic font-light">
+    Bridging Academia & Scalable Software Engineering
+  </p>
+
+  {/* Buttons */}
+  <div className="flex items-center justify-center space-x-4 mt-6">
+    
+  </div>
+</h6>
+
+                
+                
                     <Button
                         as="link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href={GENERAL_INFO.upworkProfile}
+                        href=""
                         variant="primary"
                         className="mt-9 banner-button slide-up-and-fade"
                     >
-                        Hire Me
+                        Contact me
+                    </Button>
+                     <Button
+                        as="link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="/Raghdan-Resume.pdf"
+                        download="Raghdan-Resume.pdf"
+                        variant="primary"
+                        className="mt-11 banner-button slide-up-and-fade"
+                    >
+                        Download RÉSUMÉ
                     </Button>
                 </div>
 

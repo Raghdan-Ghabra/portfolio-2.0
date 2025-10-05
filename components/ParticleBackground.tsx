@@ -24,7 +24,7 @@ const ParticleBackground = () => {
                 opacity: 0,
                 repeat: -1,
                 ease: 'none',
-                // yoyo: true,
+                yoyo: true,
             });
         });
     }, []);

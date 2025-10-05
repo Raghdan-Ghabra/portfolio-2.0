@@ -1,4 +1,4 @@
-'use client';
+/*'use client';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
@@ -20,8 +20,8 @@ const CustomCursor = () => {
                 x: clientX,
                 y: clientY,
                 ease: 'power2.out',
-                duration: 0.25,
-                opacity: 1,
+                duration: 4.0,
+                opacity: 2.0,
             });
         }) as any;
 
@@ -53,4 +53,4 @@ const CustomCursor = () => {
     );
 };
 
-export default CustomCursor;
+export default CustomCursor;*/

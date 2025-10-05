@@ -1,4 +1,4 @@
-'use client';
+/*'use client';
 import React, { useEffect, useRef } from 'react';
 
 const ScrollProgressIndicator = () => {
@@ -34,4 +34,4 @@ const ScrollProgressIndicator = () => {
     );
 };
 
-export default ScrollProgressIndicator;
+export default ScrollProgressIndicator;*/

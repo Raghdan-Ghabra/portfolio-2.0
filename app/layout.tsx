@@ -5,10 +5,10 @@ import { ReactLenis } from 'lenis/react';
 import 'lenis/dist/lenis.css';
 import './globals.css';
 import Footer from '@/components/Footer';
-import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';
+{/*import ScrollProgressIndicator from '@/components/ScrollProgressIndicator';*/}
 import ParticleBackground from '@/components/ParticleBackground';
 import Navbar from '@/components/Navbar';
-import CustomCursor from '@/components/CustomCursor';
+
 import Preloader from '../components/Preloader';
 import StickyEmail from './_components/StickyEmail';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -29,8 +29,8 @@ const robotoFlex = Roboto_Flex({
 });
 
 export const metadata: Metadata = {
-    title: 'Portfolio - Tajmirul Islam',
-    description: 'Personal portfolio of Tajmirul Islam',
+    title: 'Portfolio - Raghdan Ghabra',
+    description: 'Personal portfolio of Raghdan Ghabra',
 };
 
 export default function RootLayout({
@@ -74,9 +74,9 @@ export default function RootLayout({
                     <main>{children}</main>
                     <Footer />
 
-                    <CustomCursor />
+                    
                     <Preloader />
-                    <ScrollProgressIndicator />
+                   
                     <ParticleBackground />
                     <StickyEmail />
                 </ReactLenis>

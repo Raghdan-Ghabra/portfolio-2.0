@@ -39,7 +39,7 @@
         display: none;
     }
     * {
-        @apply border-border !cursor-none;
+        @apply border-border ;
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
@@ -54,4 +54,55 @@
     .markdown-text ul {
         @apply pl-5 mt-2 list-disc;
     }
+}
+@keyframes nameGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+                 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 40px rgba(255, 255, 255, 0.6);
+  }
+}
+
+.animate-name-glow {
+  animation: nameGlow 6s ease-in-out infinite;
+}
+
+
+
+/* Moving gradient behind the text */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-move {
+  background-size: 200% 200%;
+  animation: gradientMove 6s linear infinite;
+}
+
+/* Star-like shimmer along edges */
+@keyframes shimmerStar {
+  0%, 100% { opacity: 0; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(50%) scale(1.2); }
+}
+
+.shimmer {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
+  animation: shimmerStar 6s ease-in-out infinite;
+  mix-blend-mode: screen;
+}
+.text-gold {
+  color: #FFD700; /* Pure gold */
+  filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.5)); /* Matches your neon glow */
 }
